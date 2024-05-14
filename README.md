@@ -1,11 +1,50 @@
-# Sample Snack app
+# Memory Game App
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Este é um aplicativo simples de jogo da memória desenvolvido em React Native.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## Visão Geral
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+O jogo da memória é um clássico jogo de tabuleiro no qual o jogador deve encontrar pares de cartas virando-as uma de cada vez. O objetivo é encontrar todos os pares de cartas combinando-as em pares correspondentes.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+Este aplicativo implementa um jogo da memória com um conjunto de cartas contendo imagens de diferentes veículos. O jogador deve combinar os pares de cartas virando-as e memorizando sua posição para encontrar todas as combinações.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+## Funcionalidades
+
+- Interface de usuário simples e intuitiva.
+- Cartões com imagens de veículos.
+- Virar as cartas para revelar as imagens.
+- Verificar se as cartas viradas correspondem.
+- Alerta de vitória quando todos os pares de cartas são encontrados.
+- Opção para reiniciar o jogo.
+
+## Instalação
+
+1. Certifique-se de ter o ambiente de desenvolvimento React Native configurado em sua máquina.
+2. Clone este repositório.
+3. Navegue até o diretório do projeto e execute `npm install` para instalar as dependências.
+4. Execute o aplicativo em um emulador ou dispositivo usando `npm start` ou `react-native run-android` / `react-native run-ios`.
+
+## Tecnologias Utilizadas
+
+- React Native
+- JavaScript
+- JSX
+
+## Estrutura do Projeto
+
+- `App.js`: Contém a lógica principal do aplicativo, incluindo a configuração das cartas, manipulação de eventos e lógica de jogo.
+- `components/Card.js`: Componente funcional para renderizar um único cartão.
+
+## Como Jogar
+
+- Abra o aplicativo.
+- Toque em qualquer carta para virá-la e revelar a imagem.
+- Toque em outra carta para virá-la e revelar sua imagem.
+- Se as imagens das duas cartas coincidirem, elas permanecerão viradas.
+- Se as imagens das duas cartas não coincidirem, elas serão viradas novamente após 2 segundos.
+- Continue virando as cartas até encontrar todos os pares correspondentes.
+- Quando todos os pares forem encontrados, uma mensagem de vitória será exibida.
+
+## Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas para relatar bugs, sugerir melhorias ou enviar solicitações de pull request.
